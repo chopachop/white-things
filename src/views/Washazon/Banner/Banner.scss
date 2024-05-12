@@ -1,0 +1,26 @@
+.banner {
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 960px) {
+    .banner {
+        font-size: 0.8rem;
+        text-align: center;
+
+        h1 {
+          margin-bottom: 2rem;
+        }
+
+        p {
+          width: 80%;
+          margin: 0 auto;
+        }
+    }
+}

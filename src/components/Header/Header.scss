@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #77b4a5;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .shoppingCart-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+    transition: all 0.2s ease-in-out;
+
+    circle {
+      transition: fill 0.2s ease-in-out;
+      fill: #ffac74;
+    }
+
+    .item-count-text {
+      font-size: 0.6rem;
+      fill: #fff;
+      text-anchor: end;
+    }
+  }
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
