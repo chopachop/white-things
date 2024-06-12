@@ -20,19 +20,14 @@ const ProductPage: React.FC = () => {
         if (existingItem) {
             existingItem.quantity++;
         } else {
-            localStorage.setItem(
-                'ShoppingCart',
-                JSON.stringify([
-                    shoppingCartItems.push({
-                        id: washingMachineInfo.id,
-                        name: washingMachineInfo.name,
-                        brand: washingMachineInfo.brand,
-                        price: washingMachineInfo.price,
-                        image: washingMachineInfo.image,
-                        quantity: 1,
-                    }),
-                ])
-            );
+            shoppingCartItems.push({
+                id: washingMachineInfo.id,
+                name: washingMachineInfo.name,
+                brand: washingMachineInfo.brand,
+                price: washingMachineInfo.price,
+                image: washingMachineInfo.image,
+                quantity: 1,
+            });
         }
         localStorage.setItem('ShoppingCart', JSON.stringify(shoppingCartItems));
     };
